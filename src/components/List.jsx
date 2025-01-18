@@ -9,7 +9,7 @@ function List({ list, onDelete }) {
 						<strong>Category:</strong> {item.catigories},
 						<strong> Price:</strong> {item.price},<strong> Count:</strong>{" "}
 						{item.count}
-						<button type="button" onClick={onDelete}>
+						<button type="button" onClick={() => onDelete(item.id)}>
 							delete
 						</button>
 					</li>
